@@ -1,0 +1,50 @@
+<!DOCtYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Vault</title>
+    <link rel="stylesheet" href="/My-testing-projects/quote saver/index.css">
+</head>
+<body>
+    <main class="container">
+        <header class="app-header">
+            <h1>Quote Vault</h1>
+            <p>Your personal collection of inspiring words.</p>
+        </header>
+
+        <section class="form-section">
+            <form id="quote-form">
+                <div class="input-group">
+                    <label for="quote-text">The Quote</label>
+                    <textarea id="quote-text" placeholder="Enter an inspiring quote..." required></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="quote-author">The Author</label>
+                    <input type="text" id="quote-author" placeholder="Who said this?" required>
+                </div>
+
+                <button type="submit" id="add-button">Add to Collection</button>
+            </form>
+        </section>
+
+        <section class="display-section">
+            <div class="section-header">
+                <h2>Saved Quotes</h2>
+                <span id="item-count">0</span>
+            </div>
+
+            <div id="quotes-list">
+                <!-- Quots are injected here via JavaScript -->
+            </div>
+
+            <div id="empty-state">
+                <p>Your vault is currently empty.</p>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="/My-testing-projects/quote saver/index.js"></script>
+</body>
+</html>
